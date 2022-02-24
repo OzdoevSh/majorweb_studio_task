@@ -7,6 +7,7 @@ class User {
     makeAutoObservable(this)
   }
 
+  /// patch запрос, чтобы при каждой регистрации в db.json записывался новый пользователь
   async addUser(nickname, phone, email, password, firstName, lastName, gender, about ) {
     await axios.patch('http://localhost:3000/users/1', {nickname, phone, email, password, firstName, lastName, gender, about})
   }

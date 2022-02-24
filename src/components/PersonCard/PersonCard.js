@@ -26,7 +26,7 @@ function PersonCard(props) {
 
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <img src={phone} style={{ width: '40px' }} />
-          <span style={{ fontSize: '25px', fontWeight: 'bold', marginLeft: '10px' }}>{user.phone}</span>
+          <span style={{ fontSize: '25px', fontWeight: 'bold', marginLeft: '10px' }}>+{user.phone}</span>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center' }}>
